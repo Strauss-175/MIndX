@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+a {
+  color: rgb(152, 155, 155);
+}
+header {
+  position: sticky;
+  width: 100%;
+  background-color: #202124;
+  color: rgb(226, 211, 211);
+  display: grid;
+  grid-template: 100% / 5% 20% 20% 20% 20% 15%;
+  text-align: center;
+  font-style: italic;
+  top: 0;
+  z-index: 1;
+  padding: 0.8% 0;
+  font-size: 2.5vw
+}
+nav {
+  position: relative;
+}
+nav h1 {
+  font-size: 2.5vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* F   O   R     C   A   T   E   G   O   R   Y */
+.category div {
+  position: absolute;
+  background-color: rgb(108, 66, 148);
+  width: 100%;
+  font-size: 2vw;
+  line-height: 50px;
+  font-weight: 700;
+  color: rgb(152, 155, 155);
+  overflow: hidden;
+  transition: height 0.2s ease;
+  height: 0px;
+  display: grid;
+  grid-template: 25% 25% 25% 25% / 100%;
+  margin-top: 4%;
+}
+.category:hover div {
+  height: 30vh;
+}
+.category div a:hover {
+  background-color: cadetblue;
+}
+/*   F   O   R      L   O   G   O */
+.Logo {
+  display: inline-block;
+  text-align: left;
+  color: rgb(110, 143, 20);
+  letter-spacing: 1vw;
+}
+/* F   O   R      O   P   T */
+.btn div {
+  position: absolute;
+  text-align: left;
+  font-size: 2vw;
+  background-color: aliceblue;
+  margin-top: 20%;
+  height:90vh;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr /100%;
+  width: 0px;
+  overflow: hidden;
+  transition: width .2s ease;
+}
+.btn h1:focus ~ .opt {
+  width: 400%;
+  border: solid black;
+  border-width: 0 2px 2px 2px;
+}
+.opt a {
+  display: flex;
+  align-items: center;
+}
+
+/* F   O   R      B   O   D   Y */
+body {
+  background-color: darkslategrey;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 4vh;
+}
+main img {
+  width: 100%;
+}
+aside {
+  width: 13vw !important;
+  height: 100%;
+  padding-top: 30vh;
+  position: sticky;
+  top: 0;
+}
+.mid {
+  width: 70vw;
+  text-align: center;
+}
+.mid h1 {
+  padding: 2% 0;
+}
+.mid a {
+  display: block;
+  text-align: right;
+}
+.mid div div a {
+  text-align: center;
+}
+/*  F   O   R      G   A   M   E   S */
+.Games {
+  background-color: #202124;
+  border-radius: 4%;
+}
+.g-banner {
+  display: grid;
+  grid-template: auto auto / 25% 25% 25% 25%;
+}
+.g-banner div {
+  margin: 4% 4%;
+  border: #383d49 double 2px;
+}
+/*  F   O   R      M   O   V   I   E   S */
+.Movies {
+  background-color: #202124;
+  border-radius: 5%;
+}
+.m-banner {
+  display: grid;
+  grid-template: auto auto / 25% 25% 25% 25%;
+}
+.m-banner div {
+  margin: 4% 2%;
+  border: #383d49 double 2px;
+}
+.up {
+  display: block;
+  text-align: center;
+  font-size: 55px;
+}
