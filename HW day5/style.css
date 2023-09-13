@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style: none;
   scroll-behavior: smooth;
 }
 a {
@@ -15,13 +14,10 @@ header {
   background-color: #202124;
   color: rgb(226, 211, 211);
   display: grid;
-  grid-template: 100% / 5% 20% 20% 20% 20% 15%;
-  text-align: center;
-  font-style: italic;
+  grid-template: 9vh / 5% 20% 20% 20% 20% 15%;
   top: 0;
   z-index: 1;
-  padding: 0.8% 0;
-  font-size: 2.5vw
+  font-size: 2.5vw;
 }
 nav {
   position: relative;
@@ -32,28 +28,60 @@ nav h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+/* F   O   R     I   N   P   U   T */
+#search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* F   O   R     C   A   T   E   G   O   R   Y */
-.category div {
-  position: absolute;
-  background-color: rgb(108, 66, 148);
+.category section {
+  position: relative;
+  background-color: rgb(59, 14, 102);
   width: 100%;
-  font-size: 2vw;
-  line-height: 50px;
-  font-weight: 700;
   color: rgb(152, 155, 155);
+  line-height: 50px;
+  font-size: 15px;
+  display: grid;
+  grid-template: 25% 25% 25% 25% / 93% auto; 
+  text-align: center;
   overflow: hidden;
   transition: height 0.2s ease;
   height: 0px;
-  display: grid;
-  grid-template: 25% 25% 25% 25% / 100%;
-  margin-top: 4%;
 }
-.category:hover div {
+.category:hover {
+  background-color: rgba(250, 235, 215, 0.178);
+}
+.category:hover section {
   height: 30vh;
+  overflow: unset;
 }
-.category div a:hover {
-  background-color: cadetblue;
+.category section h2:hover {
+  background-color: #3b54a0;
+}
+.category section h1:hover {
+  background-color: #3b54a0;
+}
+.expand {
+  display: flex; 
+}
+.expand div {
+  position: absolute;
+  background-color: white;
+  width: 0px;
+  margin-left: 19px;
+  transition: width .2s ease;
+  line-height: 30px;
+  overflow: hidden;
+}
+.expand:hover div {
+  display:inline;
+  width: 60%
+}
+.expand div h3:hover {
+  background-color: #3b54a0;
 }
 /*   F   O   R      L   O   G   O */
 .Logo {
@@ -61,31 +89,35 @@ nav h1 {
   text-align: left;
   color: rgb(110, 143, 20);
   letter-spacing: 1vw;
+  font-style: italic;
+  font-size: larger;
 }
 /* F   O   R      O   P   T */
-.btn div {
+.opt {
   position: absolute;
   text-align: left;
-  font-size: 2vw;
+  font-size: 1.5vw;
   background-color: aliceblue;
-  margin-top: 20%;
-  height:90vh;
+  height: 91vh;
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr /100%;
   width: 0px;
   overflow: hidden;
-  transition: width .2s ease;
-}
-.btn h1:focus ~ .opt {
-  width: 400%;
-  border: solid black;
-  border-width: 0 2px 2px 2px;
+  transition: width 0.2s ease;
 }
 .opt a {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.336);
 }
-
+.btn:focus ~ .opt {
+  width: 400%;
+  border: solid black;
+  border-width: 0 2px 2px 2px;
+}
+.opt a:hover {
+  background-color: aqua;
+}
 /* F   O   R      B   O   D   Y */
 body {
   background-color: darkslategrey;
