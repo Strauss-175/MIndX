@@ -1,3 +1,5 @@
-@media screen {
-    
+@media screen {max-width: 576px;
 }
+.category {display: none;}
+input {display: none;}
+.Login {display: none;}
