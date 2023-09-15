@@ -1,5 +1,22 @@
-@media screen {max-width: 576px;
+@media screen and (max-width: 576px) {
+  header {
+    display: grid;
+    grid-template: 9vh / 10% 90%;
+  }
+  .category {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  .Login {
+    display: none;
+  }
+  .Logo {
+    font-size: 4vh;
+  }
+  .opt a{
+    font-size: 200%
+  }
+  
 }
-.category {display: none;}
-input {display: none;}
-.Login {display: none;}

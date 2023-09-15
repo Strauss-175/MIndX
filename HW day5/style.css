@@ -157,7 +157,7 @@ aside {
   background-color: #202124;
   border-radius: 4%;
 }
-.g-banner {
+.mid div div {
   display: grid;
   grid-template: auto auto / 25% 25% 25% 25%;
 }
@@ -170,10 +170,7 @@ aside {
   background-color: #202124;
   border-radius: 5%;
 }
-.m-banner {
-  display: grid;
-  grid-template: auto auto / 25% 25% 25% 25%;
-}
+
 .m-banner div {
   margin: 4% 2%;
   border: #383d49 double 2px;
