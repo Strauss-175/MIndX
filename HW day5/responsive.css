@@ -18,5 +18,10 @@
   .opt a{
     font-size: 200%
   }
-  
+  .g-banner {
+    grid-template: 1fr 1fr 1fr 1fr/ 50% 50%;
+  }
+  .m-banner {
+    grid-template: 1fr 1fr 1fr 1fr/ 50% 50%;
+  }
 }
