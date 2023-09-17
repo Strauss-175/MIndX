@@ -177,7 +177,7 @@ aside {
   width: 13vw !important;
   height: 100%;
   padding-top: 30vh;
-  position: sticky;
+  position: relative;
   top: 0;
 }
 #ad-l {
@@ -185,11 +185,13 @@ aside {
   right: 0;
   margin: -5% -5% 0 0;
   cursor: pointer;
+  z-index: 100;
 }
 #ad-r {
   position: absolute;
   margin: -5%;
 }
-.close-ad:focus ~ .ad{
+#ad-l:active {
+  color: darkorange;
   display: none;
 }
