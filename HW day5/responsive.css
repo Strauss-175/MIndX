@@ -24,4 +24,7 @@
   .m-banner {
     grid-template: 1fr 1fr 1fr 1fr/ 50% 50%;
   }
+  .mid div {
+    border-radius: 15px   ;
+  }
 }

@@ -152,12 +152,12 @@ aside {
 .mid div div a {
   text-align: center;
 }
-/*  F   O   R      G   A   M   E   S */
-.Games {
+.mid div {
   background-color: #202124;
   border-radius: 4%;
 }
-.mid div div {
+/*  F   O   R      G   A   M   E   S */
+.g-banner {
   display: grid;
   grid-template: auto auto / 25% 25% 25% 25%;
 }
@@ -166,17 +166,17 @@ aside {
   border: #383d49 double 2px;
 }
 /*  F   O   R      M   O   V   I   E   S */
-.Movies {
-  background-color: #202124;
-  border-radius: 5%;
+.m-banner {
+  display: grid;
+  grid-template: auto auto / 25% 25% 25% 25%;
 }
-
 .m-banner div {
   margin: 4% 2%;
   border: #383d49 double 2px;
 }
+/* F   O   R      B   U   T   T   O   N */
 .up {
   display: block;
   text-align: center;
-  font-size: 55px;
+  font-size: 55px ;
 }
