@@ -177,7 +177,7 @@ aside {
   width: 13vw !important;
   height: 100%;
   padding-top: 30vh;
-  position: relative;
+  position: sticky;
   top: 0;
 }
 #ad-l {

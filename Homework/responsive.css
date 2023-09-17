@@ -30,7 +30,10 @@
   .ad {
     display: none;
   }
+  .close-ad {
+    display: none;
+  }
   .up {
-    
+    display: none;
   }
 }
