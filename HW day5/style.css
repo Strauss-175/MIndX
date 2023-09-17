@@ -45,7 +45,7 @@ nav h1 {
   line-height: 50px;
   font-size: 15px;
   display: grid;
-  grid-template: 25% 25% 25% 25% / 93% auto; 
+  grid-template: 25% 25% 25% 25% / 93% auto;
   text-align: center;
   overflow: hidden;
   transition: height 0.2s ease;
@@ -65,20 +65,20 @@ nav h1 {
   background-color: #3b54a0;
 }
 .expand {
-  display: flex; 
+  display: flex;
 }
 .expand div {
   position: absolute;
   background-color: white;
   width: 0px;
   margin-left: 19px;
-  transition: width .2s ease;
+  transition: width 0.2s ease;
   line-height: 30px;
   overflow: hidden;
 }
 .expand:hover div {
-  display:inline;
-  width: 60%
+  display: inline;
+  width: 60%;
 }
 .expand div h3:hover {
   background-color: #3b54a0;
@@ -125,18 +125,10 @@ body {
 main {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
   margin-top: 4vh;
 }
 main img {
   width: 100%;
-}
-aside {
-  width: 13vw !important;
-  height: 100%;
-  padding-top: 30vh;
-  position: sticky;
-  top: 0;
 }
 .mid {
   width: 70vw;
@@ -178,5 +170,26 @@ aside {
 .up {
   display: block;
   text-align: center;
-  font-size: 55px ;
+  font-size: 55px;
+}
+/* F   O   R      A   D */
+aside {
+  width: 13vw !important;
+  height: 100%;
+  padding-top: 30vh;
+  position: sticky;
+  top: 0;
+}
+#ad-l {
+  position: absolute;
+  right: 0;
+  margin: -5% -5% 0 0;
+  cursor: pointer;
+}
+#ad-r {
+  position: absolute;
+  margin: -5%;
+}
+.close-ad:focus ~ .ad{
+  display: none;
 }
