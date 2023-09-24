@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
   list-style: none;
 }
+body {width: 100vw};
 img {
   width: auto;
   height: 100%;
@@ -29,11 +30,11 @@ nav div {
 }
 nav div ul {
   position: absolute;
-  line-height: 3.5vh;
+  line-height: 9vh;
   width: 13vw;
   padding-left: 15px;
-  box-shadow: 0 5px 10px 2px;
-  overflow: hidden;
+  box-shadow: 0px 10px 20px -20px;
+    overflow: hidden;
   transition: opacity 0.5s ease;
   opacity: 0;
 }
@@ -50,16 +51,17 @@ nav div:hover ul {
 .banner1 img {
   width: auto;
   height: 70%;
-  border-radius: 50%;
+  border-radius: 45%;
   margin: 0 2%;
 }
 .banner1 article {
   width: 100%;  
-  margin: 10%;
+  margin: 5% 1% 10% 10%;
 }
 .banner1 article h1 {
   font-size: 50px;
 }
 .banner1 article p{
-    margin: 10%;
+  margin-top: 5%;
+  font-size: 20px;
 }

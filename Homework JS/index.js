@@ -44,7 +44,7 @@ if (x < 2) {
   console.log("x khong phai la so nguyen to");
 }
 {
-  for (let i = 0; i < x; i++) {
+  for (let i = 0; i < x-1; i++) {
     if (x % i == 0) {
       console.log("x khong phai la so nguyen to");
     } else {
