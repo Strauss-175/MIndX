@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,17 +6,9 @@
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
-}
-body {
-  width: 100vw;
-}
-img {
-  width: auto;
-  height: 100%;
-}
+  font-family: 'Roboto', sans-serif;}
 header {
-  height: 7vh;
-  width: 100vw;
+  height: 10vh;
   display: flex;
   justify-content: center;
 }
@@ -27,7 +20,7 @@ nav {
   align-items: center;
 }
 nav div {
-  font-size: 20px;
+  font-size: 25px;
   position: relative;
   cursor: pointer;
 }
@@ -35,58 +28,125 @@ nav div ul {
   position: absolute;
   line-height: 9vh;
   width: 13vw;
+  font-size: 20px;
   padding-left: 15px;
   box-shadow: 0px 10px 20px -20px;
   overflow: hidden;
   transition: opacity 0.5s ease;
   opacity: 0;
+  height: 0;
 }
 nav div:hover ul {
-  opacity: 100%;
-
+  opacity: 1;
+  height: auto;
+}
+nav div ul li:hover {
+  color: rgb(165, 148, 127);
 }
 /* S   E   A   R   C   H*/
 .search {
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 25px;
 }
 .search input {
   border: none;
+  outline: none;
   font-size: 20px;
   padding: 10px;
-}
-.search:focus ~ input{
-  border: none
+  width: 75%;
 }
 /* C   A   R   T */
 .cart {
   font-size: 30px;
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 /* B   A   N   N   E   R   1 */
 .banner1 {
-  margin-top: 10vh;
+  margin-top: 15vh;
   display: flex;
-  height: 90vh;
-  width: 100vw;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
 }
-.banner1 img {
-  width: auto;
-  height: 70%;
-  border-radius: 45%;
-  margin: 0 2%;
+.pic1 {
+  height: 40vh;
+  border-radius: 65px;
+  align-self: self-end;
+}
+.pic2 {
+  height: 70vh;
+  border-radius: 120px;
+  margin-left: 5%;
 }
 .banner1 article {
-  width: 100%;
-  margin: 5% 1% 10% 10%;
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .banner1 article h1 {
-  font-size: 50px;
+  font-size: 500%;
 }
 .banner1 article p {
+  font-size: 150%;
+  padding-right: 10%;
+}
+.banner1 article button {
+  font-size: 100%;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid rgb(177, 137, 137);
+  border-radius: 10px;
+}
+.banner1 article button:hover {
+  background-color: rgb(177, 137, 137);
+}
+/* B   A   N   N   E   R    2 */
+.banner2 {
+  position: relative;
   margin-top: 5%;
-  font-size: 20px;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.backgroundPic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -5;
+}
+.banner2 article {
+  align-self: center;
+  width: 30%;
+}
+.banner2 article h1 {
+  font-size: 400%;
+}
+.banner2 article p {
+  font-size: 120%;
+  line-height: 150%;
+}
+.banner2 div {
+  position: relative;
+  width: 40%;
+}
+.pic3{
+  height: 80%;
+  border-radius: 0 30px 50% 30px;
+
+}
+.pic4 {
+  width: 60%;
+  border-radius: 150px 30px 0 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: -10%;
 }
