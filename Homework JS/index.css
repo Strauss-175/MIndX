@@ -1,0 +1,23 @@
+html  {
+    display: flex;
+    justify-content: center;
+}
+body{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+div {
+    display: grid;
+    gap: 20px;
+    grid-template: 40% 40%/ 30% auto;
+}
+h1 {
+    text-align: center;
+}
+button {
+    width: 20%;
+    height: 50px;
+    text-align: center;
+}
