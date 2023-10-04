@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <h1>Log In</h1>
-    <div>
-      <p>Username:</p>
-      <input type="text" id="username"/>
-      <p>Passwords:</p>
-      <input type="password" id="password"/>
-    </div>
-    <button id="btn">Check</button>
+    <h1>New Account</h1>
+    <section>
+      <h4>Username:</h4>
+      <div>
+        <input type="text" id="username" />
+        <p id="failed">Email existed, Please use other email</p>
+      </div>
+      <h4>Passwords:</h4>
+      <input type="password" id="password" />
+      <br />
+      <button id="confirm">Confirm Password</button>
+    </section>
+    <button id="save">Save</button>
     <script src="./index.js"></script>
   </body>
 </html>

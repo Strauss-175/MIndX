@@ -1,23 +1,37 @@
-html  {
-    display: flex;
-    justify-content: center;
+html {
+  display: flex;
+  justify-content: center;
 }
-body{
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+body {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 900px;
+  gap: 20px;
 }
-div {
-    display: grid;
-    gap: 20px;
-    grid-template: 40% 40%/ 30% auto;
+section {
+  display: grid;
+  grid-template: 40% 40% 20%/ 30% auto;
+  position: relative;
+}
+#failed {
+    font-size: 15px;
+    display: none;
+}
+input {
+  height: 50%;
+  width: 100%;
 }
 h1 {
-    text-align: center;
+  text-align: center;
 }
-button {
-    width: 20%;
-    height: 50px;
-    text-align: center;
+#save {
+  width: 20%;
+  height: 50px;
+  text-align: center;
+}
+#confirm {
+  width: 50%;
+  margin-left: 50%;
 }
