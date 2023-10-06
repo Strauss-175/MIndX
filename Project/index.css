@@ -195,28 +195,30 @@ nav div ul li:hover {
 /* B   A   N   N   E   R   3 */
 .banner3 {
   margin-top: 5%;
-  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100vh;
 }
-.layer2 {
+.content_abt {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.content_abt h1 {
+  font-size: 400%;
+}
+.content_abt p {
+  font-size: 120%;
+  text-align: center;
+  line-height: 130%;
+  width: 80%;
+}
+.img_abt {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 2%;
 }
-.layer2 p {
-  font-size: 25px;
-}
-.layer2 img {
-  width: 30%;
-  background-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1)
-  );
-}
-.pic5 {
-  border-radius: 0 50% 50% 0;
-}
-.pic6 {
-  border-radius: 100% 0 0 100%;
+.img_abt img {
+  height: 70vh;
+  border-radius: 200px;  
 }
