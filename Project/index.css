@@ -43,7 +43,7 @@ header div {
   display: flex;
   font-size: 25px;
 }
-.logo {
+#logo {
   height: 75%;
 }
 header div a {
@@ -88,7 +88,7 @@ nav div ul li:hover {
   color: rgb(165, 148, 127);
 }
 /* S   E   A   R   C   H*/
-.search {
+#search {
   width: 25%;
   border-bottom: 1px solid;
   display: flex;
@@ -96,55 +96,55 @@ nav div ul li:hover {
   justify-content: center;
   font-size: 20px;
 }
-.search input {
+#search input {
   border: none;
   outline: none;
   font-size: 18px;
   width: 75%;
 }
 /* C   A   R   T */
-.cart {
+#cart {
   width: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.cart img {
+#cart img {
   width: 50%;
 }
 /* B   A   N   N   E   R   1 */
-.banner1 {
+#banner1 {
   margin-top: 15vh;
   display: flex;
   height: 70vh;
   justify-content: center;
   align-items: center;
 }
-.pic1 {
+#pic1 {
   height: 40vh;
   border-radius: 65px;
   align-self: self-end;
 }
-.pic2 {
+#pic2 {
   height: 70vh;
   border-radius: 120px;
   margin-left: 5%;
 }
-.banner1 article {
+#banner1 article {
   width: 40vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.banner1 article h1 {
+#banner1 article h1 {
   font-size: 500%;
 }
-.banner1 article p {
+#banner1 article p {
   font-size: 150%;
   padding-right: 10%;
 }
-.banner1 article button {
+#banner1 article button {
   font-size: 100%;
   width: 250px;
   height: 50px;
@@ -152,39 +152,38 @@ nav div ul li:hover {
   border: 1px solid rgb(177, 137, 137);
   border-radius: 10px;
 }
-.banner1 article button:hover {
+#banner1 article button:hover {
   background-color: rgb(177, 137, 137);
 }
 /* B   A   N   N   E   R    2 */
-.banner2 {
-  position: relative;
+#banner2 {
   margin-top: 5%;
   height: 70vh;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
-.banner2 article {
+#banner2 article {
   align-self: center;
   width: 35%;
   z-index: 1;
   background-color: transparent;
 }
-.banner2 article h1 {
+#banner2 article h1 {
   font-size: 400%;
 }
-.banner2 article p {
+#banner2 article p {
   font-size: 120%;
   line-height: 150%;
 }
-.banner2 div {
+#banner2 div {
   position: relative;
   width: 50%;
 }
-.pic3 {
+#pic3 {
   height: 70%;
   border-radius: 30px 30px 150px 30px;
 }
-.pic4 {
+#pic4 {
   width: 60%;
   border-radius: 150px 30px 30px 30px;
   position: absolute;
@@ -193,32 +192,71 @@ nav div ul li:hover {
   margin-right: -10%;
 }
 /* B   A   N   N   E   R   3 */
-.banner3 {
+#banner3 {
   margin-top: 5%;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 120vh;
 }
-.content_abt {
+#content_abt {
   display: flex;
   align-items: center;
   flex-flow: column;
 }
-.content_abt h1 {
+#content_abt h1 {
   font-size: 400%;
 }
-.content_abt p {
+#content_abt p {
   font-size: 120%;
   text-align: center;
   line-height: 130%;
   width: 80%;
 }
-.img_abt {
+#img_abt {
   display: flex;
   justify-content: space-between;
 }
-.img_abt img {
+#img_abt img {
   height: 70vh;
-  border-radius: 200px;  
+  border-radius: 200px;
+}
+#banner3 button{
+  align-self: center;
+  font-size: 130%;
+  cursor: pointer;
+  border: 1px solid rgb(177, 137, 137);
+  height: 7%;
+  width: 20%;
+}
+#banner3 button:hover {
+  background-color: rgb(177, 137, 137);
+}
+/* B   A   N   N   E   R   4 */
+#banner4 h1 {
+  margin: 5% 0;
+  font-size: 400%;
+  text-align: center;
+}
+#banner4 article {
+  font-size: 120%;
+  display: flex;
+}
+#banner4 img {
+  height: 100%;
+}
+#banner4 p {
+  width: 30%;
+}
+#banner4 strong {
+  align-self: center;
+  font-size: 150%;
+}
+/* B   A   N   N   E   R   5 */
+#banner5 img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  z-index: -10;
 }
