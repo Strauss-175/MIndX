@@ -5,10 +5,14 @@
   padding: 0;
   text-decoration: none;
   scroll-behavior: smooth;
-  list-style: none;  font-family: "Playfair Display", serif;
+  list-style: none;
+  font-family: "Playfair Display", serif;
 }
 /* N   A   V   I   G   A   T   I   O   N */
-h1,p {margin: 0}
+h1,
+p {
+  margin: 0;
+}
 header {
   width: 100%;
   height: 8vh;
@@ -124,7 +128,7 @@ nav div ul li:hover {
   width: 50% !important;
   height: 8%;
   border: 1px solid rgb(0, 0, 0);
-  box-shadow: 0px 5px 10px -5px ;
+  box-shadow: 0px 5px 10px -5px;
   transition: background-color 0.3s ease;
   transition: color 0.2s ease;
 }
@@ -138,18 +142,10 @@ nav div ul li:hover {
 #page2 {
   display: flex;
   height: 80vh;
-  justify-content: center;
   align-items: center;
-}
-#pic3 {
-  height: 40vh;
-  border-radius: 65px;
-  align-self: self-end;
-}
-#pic4 {
-  height: 70vh;
-  border-radius: 120px;
-  margin-left: 5%;
+  background-image: url(./assets/gif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #page2 div {
   width: 40vw;
@@ -157,6 +153,8 @@ nav div ul li:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  color: white;
+  margin-left: 10%;
 }
 #page2 div h1 {
   font-size: 500%;
@@ -195,4 +193,30 @@ nav div ul li:hover {
 #banner2 strong {
   font-weight: 500;
   text-decoration: underline;
+}
+/* B   A   N   N   E   R   3 */
+#banner3 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#banner3 h1 {
+  text-align: center;
+  font-size: 350%;
+}
+#banner3 h6 {
+  text-align: center;
+  font-size: 150%;
+}
+#banner3 div {
+  position: relative;
+}
+#tshirt {
+  background-image: url(./assets/mediamodifier-elbKS4DY21g-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#banner3 div {
+  height: 20vh;
+  width: 80vw;
 }
