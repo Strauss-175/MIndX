@@ -183,6 +183,7 @@ nav div ul li:hover {
   height: 18vh;
   background-color: #756d6d;
   color: white;
+  font-size: x-small;
 }
 #banner2 div {
   display: flex;
@@ -208,15 +209,38 @@ nav div ul li:hover {
   text-align: center;
   font-size: 150%;
 }
-#banner3 div {
+#top_banner3,
+#bottom_banner3 {
+  height: 15vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 60px;
   position: relative;
 }
-#tshirt {
-  background-image: url(./assets/mediamodifier-elbKS4DY21g-unsplash.jpg);
+#tshirt,
+#shoes,
+#jeans,
+#hoodies,
+#others {
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: end;
+  border-radius: 20px;
 }
-#banner3 div {
-  height: 20vh;
-  width: 80vw;
+#tshirt {
+  width: 69%;
+}
+#shoes {
+  background-image: url(./assets/radek-skrzypczak-WlB8TsI_th0-unsplash.jpg);
+  width: 30%;
+}
+#jeans,
+#hoodies,
+#others {
+  width: 33%;
+}
+#jeans {
+  background-image: url(./assets/hoodies.jpg);
 }
