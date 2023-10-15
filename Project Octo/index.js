@@ -11,3 +11,4 @@ function slide_in() {
       }
     }
   }
+  window.addEventListener("scroll", slide_in);

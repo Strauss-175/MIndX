@@ -291,6 +291,17 @@ nav div ul li:hover {
 #top_banner4 button{
   align-self: flex-end;
 }
+.slideIn {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.slideIn.active {
+  transform: translateY(0);
+  opacity: 1;
+
+}
 .product_top p {
   font-size: 15px;
   margin: 10px 0;
