@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -276,31 +276,40 @@ nav div ul li:hover {
 #banner4 {
   margin-top: 3%;
 }
-#logo_collection h1{
-  text-align: center;
-  font-style: italic;
-  font-family: 'Dancing Script', cursive;
-  font-size: 100px;
-  line-height: 60%;
-  margin-right: 25%;
-}
 #top_banner4 {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  height: 22vh;
 }
-#top_banner4 button{
-  align-self: flex-end;
+#logo_collection {
+  align-self: center;
 }
-.slideIn {
+#logo_collection h1 {
+  text-align: center;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  line-height: 60%;
+  margin-right: 25%;
+  align-self: center;
+}
+.left {
   position: relative;
-  transform: translateY(150px);
+  transform: translatex(-300px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.right {
+  align-self: flex-end;
+  position: relative;
+  transform: translatex(300px);
   opacity: 0;
   transition: 1s all ease;
 }
 .slideIn.active {
-  transform: translateY(0);
+  transform: translatex(0);
   opacity: 1;
-
 }
 .product_top p {
   font-size: 15px;
@@ -318,10 +327,10 @@ nav div ul li:hover {
   width: 100%;
   height: 395px;
   border-radius: 10px;
-  transition:0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .product_item img:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 ul.products_trending {
   display: flex;
