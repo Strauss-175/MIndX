@@ -1,18 +1,10 @@
-main {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  border: 3px solid;
-  height: 400;
+
+section {
+  width: 24%;
 }
-.Test {
-  width: 23%;
-  margin-top: 2%;
-  border-radius: 10px;
-}
-.Test:hover {
+section:hover {
   cursor: pointer;
-  scale: 110%;
+  scale: 105%;
   transition: 0.3s;
   background-color: aliceblue;
 }

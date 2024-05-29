@@ -74,16 +74,18 @@ function App() {
   ];
   return (
     <>
-      {PokemonInfo.map((item, index) => (
-        <Card
-          key={index}
-          id={index + 1}
-          img={item.img}
-          name={item.name}
-          element1={item.element1}
-          element2={item.element2}
-        />
-      ))}
+      <div>
+        {PokemonInfo.map((item, index) => (
+          <Card
+            key={index}
+            img={item.img}
+            id={index + 1}
+            name={item.name}
+            element1={item.element1}
+            element2={item.element2}
+          />
+        ))}
+      </div>
     </>
   );
 }
