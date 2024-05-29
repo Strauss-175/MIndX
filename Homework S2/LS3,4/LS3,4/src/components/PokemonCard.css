@@ -1,0 +1,44 @@
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 3px solid;
+  height: 400;
+}
+.Test {
+  width: 23%;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+.Test:hover {
+  cursor: pointer;
+  scale: 110%;
+  transition: 0.3s;
+  background-color: aliceblue;
+}
+img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+p {
+  margin-top: 2%;
+  color: gray;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.elements {
+  display: flex;
+  justify-content: space-evenly;
+}
+h4 {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+  border-radius: 10px;
+}
