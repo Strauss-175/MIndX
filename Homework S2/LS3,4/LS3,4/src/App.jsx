@@ -4,8 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Card from "./components/PokemonCard";
 function App() {
-  const [count, setCount] = useState(0);
-  const PokemonInfo = [
+  const BasePokemonInfo = [
     {
       name: "Bulbasaur",
       img: "/pics/001.png",
@@ -75,16 +74,18 @@ function App() {
   return (
     <>
       <div>
-        {PokemonInfo.map((item, index) => (
-          <Card
-            key={index}
-            img={item.img}
-            id={index + 1}
-            name={item.name}
-            element1={item.element1}
-            element2={item.element2}
-          />
-        ))}
+        {BasePokemonInfo.map((item, index) => {
+          return (
+            <Card
+              key={index}
+              img={item.img}
+              index={index + 1}
+              name={item.name}
+              element1={item.element1}
+              element2={item.element2}
+            />
+          );
+        })}
       </div>
     </>
   );
