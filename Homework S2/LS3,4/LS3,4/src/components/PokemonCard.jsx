@@ -5,15 +5,15 @@ const Card = ({ name, index, element1, element2, img }) => {
   // D  A  T  A    C  O  N  T  R  O  L
   let [newName, setName] = useState(name);
   const dataName = () => {
-    setName(document.getElementById(index).value);
+    setName(nameInput);
   };
   let [newStatus, setStatus] = useState(false);
-  const status = () => {
+  const dataStatus = () => {
     setStatus(newStatus ? false : true);
   };
   return (
-    <main >
-      <section onClick={status}>
+    <main>
+      <section onClick={dataStatus}>
         <img src={img} />
         <p># {index}</p>
         <h1>{newName}</h1>
@@ -56,12 +56,12 @@ const Card = ({ name, index, element1, element2, img }) => {
       </section>
       {newStatus && (
         <Modal
-          index={index}
           name={name}
+          newName={newName}
           element1={element1}
           element2={element2}
-          status={status}
-          dataName={dataName}
+          dataStatus={dataStatus}
+          // dataName={dataName}
         />
       )}
     </main>
